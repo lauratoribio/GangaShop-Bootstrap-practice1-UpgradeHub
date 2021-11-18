@@ -1,0 +1,228 @@
+.mainTitle {
+  margin: 5vw 0;
+}
+
+.mainTitle h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 6vw;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.mainTitle h1 span {
+  color: #ccff33;
+  background-color: #212529;
+  border: solid 2px #ccff33;
+  border-radius: 50%;
+  padding: 10px 80px;
+  font-size: 4vw;
+}
+
+.columnRight img {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  max-width: 10rem;
+}
+
+.columnLeft img {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  max-width: 10rem;
+  position: relative;
+  margin-top: 200%;
+  margin-left: 50%;
+}
+
+@media (max-width: 420px) {
+  .mainTitle h1 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+  .mainTitle h1 span {
+    font-size: 6vw;
+    padding: 5px 20px !important;
+    border: solid 1.5px;
+  }
+  .columnRight img {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    max-width: 5rem;
+    position: absolute;
+    z-index: 3;
+    margin-top: 3rem;
+    margin-left: -4rem;
+  }
+  .columnLeft img {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    max-width: 5rem;
+    position: absolute;
+    z-index: 3;
+    margin-top: 215%;
+    margin-left: 1rem;
+  }
+}
+
+.card-group {
+  margin-top: 2vw;
+}
+
+.card-group .card .btn {
+  background-color: #ccff33;
+  color: #212529;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  border-color: #212529;
+}
+
+.card-group .card .btn:hover {
+  background-color: #212529;
+  color: #ccff33;
+}
+
+.card-group .card .card-title {
+  font-family: "Syne", sans-serif;
+  color: #c370ff;
+  font-weight: bold;
+}
+
+.card-group .card .card-text {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.group2 {
+  margin-top: 0;
+}
+
+@media (max-width: 420px) {
+  .card-group {
+    margin-top: 2vw;
+  }
+}
+
+.mainTitle {
+  display: inline-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.animation {
+  width: auto;
+  height: 8vw;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.animation ul {
+  font-family: "Syne", sans-serif;
+  font-size: 6vw;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  padding-left: 0px;
+  -webkit-animation: change 6s infinite;
+          animation: change 6s infinite;
+  margin: 0;
+  list-style: none;
+}
+
+@-webkit-keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -9.3vw;
+  }
+  50% {
+    margin-top: -9.3vw;
+  }
+  55% {
+    margin-top: -18vw;
+  }
+  80% {
+    margin-top: -18vw;
+  }
+  85% {
+    margin-top: -9.5vw;
+  }
+  95% {
+    margin-top: -9.5vw;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -9.3vw;
+  }
+  50% {
+    margin-top: -9.3vw;
+  }
+  55% {
+    margin-top: -18vw;
+  }
+  80% {
+    margin-top: -18vw;
+  }
+  85% {
+    margin-top: -9.5vw;
+  }
+  95% {
+    margin-top: -9.5vw;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+body {
+  background-color: #212529;
+  background-image: url(/imagenes/rejilla.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  font-family: "Syne", sans-serif;
+}
+
+nav .navbar-brand {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+nav ul {
+  -webkit-animation: none;
+          animation: none;
+}
+
+nav ul .nav-item a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav ul .nav-item a:hover {
+  color: "Syne", sans-serif;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

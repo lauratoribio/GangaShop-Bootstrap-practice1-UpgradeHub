@@ -1,0 +1,68 @@
+.mainTitle {
+  margin: 5vw 0;
+  h1 {
+    @include mainTitles();
+    span {
+      color: $primaryColor;
+      background-color: $black;
+      border: solid 2px $primaryColor;
+      border-radius: 50%;
+      padding: 10px 80px;
+      font-size: 4vw;
+    }
+  }
+}
+
+.columnRight {
+  img {
+    transform: rotate(20deg);
+    max-width: 10rem;
+  }
+}
+
+.columnLeft {
+  img {
+    transform: rotate(-60deg);
+    max-width: 10rem;
+    position: relative;
+    margin-top: 200%;
+    margin-left: 50%;
+  }
+}
+
+@include mobile {
+  .mainTitle {
+    h1 {
+      font-size: 8vw;
+      line-height: 10vw;
+      span {
+        font-size: 6vw;
+        padding: 5px 20px !important;
+        border: solid 1.5px;
+      }
+    }
+  }
+  .columnRight {
+    img {
+      transform: rotate(20deg);
+      max-width: 5rem;
+      position: absolute;
+      z-index: 3;
+      margin-top: 3rem;
+      margin-left: -4rem;
+    }
+  }
+  .columnLeft {
+    img {
+      transform: rotate(40deg);
+      max-width: 5rem;
+      position: absolute;
+      z-index: 3;
+      margin-top: 215%;
+      margin-left: 1rem;
+      
+    }
+  }
+}
+
+

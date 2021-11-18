@@ -1,0 +1,36 @@
+.card-group {
+    margin-top: 2vw;
+  .card {
+    .btn {
+      background-color: $primaryColor;
+      color: $black;
+      font-family: $primaryFont;
+      font-weight: 800;
+      border-color: $black;
+      &:hover {
+        background-color: $black;
+        color: $primaryColor;
+      }
+    }
+    .card-title {
+      font-family: $primaryFont;
+      color: #c370ff;
+      font-weight: bold;
+    }
+    .card-text {
+      font-family: $primaryFont;
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.group2 {
+  margin-top: 0;
+}
+
+@include mobile {        
+    .card-group {
+        margin-top: 2vw;
+    }
+}
